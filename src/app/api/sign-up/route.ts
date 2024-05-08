@@ -3,7 +3,7 @@ import UserModal from "@/model/User.model";
 import bcrypt from "bcryptjs";
 import { sendVerificationEmail } from "@/helpers/sendVarificationEmail";
 
-export default async function POST(request: Request) {
+export async function POST(request: Request) {
   await dbConnect();
 
   try {
